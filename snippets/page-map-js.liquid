@@ -1,0 +1,19 @@
+{% case template %}
+{% when 'index' %}
+    <script src="{{ 'homepage.autojs.js' | asset_url }}" defer="defer"></script>
+{% when 'product' %}
+    <script src="{{ 'product.autojs.js' | asset_url }}" defer="defer"></script>
+{% when 'collection' %}
+    <script src="{{ 'collection.autojs.js' | asset_url }}" defer="defer"></script>
+{% when 'page' %}
+    <script src="{{ 'page.autojs.js' | asset_url }}" defer="defer"></script>
+{% when 'page.all-brands' %}
+    <script src="{{ 'page.autojs.js' | asset_url }}" defer="defer"></script>
+{% when 'page.size-guides' %}
+    <script src="{{ 'size-guides-page.autojs.js' | asset_url }}" defer="defer"></script>
+{% when 'search' %}
+    <script src="{{ 'collection.autojs.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'search.autojs.js' | asset_url }}" defer="defer"></script>
+{% else %}
+{% endcase %}
+

@@ -1,0 +1,32 @@
+{% assign format_template = template | split: '.' | first | handle %}
+{% case format_template %}
+{% when 'index' %}
+    <link rel="preload" href="{{ 'homepage.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when 'product' %}
+    <link rel="preload" href="{{ 'product.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when 'collection' %}
+    <link rel="preload" href="{{ 'collection.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when 'page' %}
+    <link rel="preload" href="{{ 'page.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when 'cart' %}
+    <link rel="preload" href="{{ 'cart.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when 'blog' %}
+    <link rel="preload" href="{{ 'blog.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when 'article' %}
+    <link rel="preload" href="{{ 'article.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when 'search' %}
+    <link rel="preload" href="{{ 'collection.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="{{ 'search.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when 'customers-account' or 'customers-order' or 'customers-addresses' or 'customers-login' or 'customers-register' %}
+    <link rel="preload" href="{{ 'account.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% when '404' %}
+    <link rel="preload" href="{{ '404.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% else %}
+{% endcase %}
+
+
+{% case template.suffix %}
+{% when 'personal-details' %}
+    <link rel="preload" href="{{ 'account.autostyle.css' | asset_url }}" as="style" onload="this.rel='stylesheet'">
+{% else %}
+{% endcase %}
