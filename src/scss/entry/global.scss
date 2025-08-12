@@ -1,0 +1,21 @@
+/* Global MR Theme Styles --------------------------------------------------- */
+/*
+
+IE11 does not support it so check GA for each customer you want to use it with.
+
+## Resources
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/@layer
+- https://www.smashingmagazine.com/2022/01/introduction-css-cascade-layers/
+- https://www.youtube.com/watch?v=_DeC_O9S9ag
+
+*/
+
+
+@import "../objects/variables/all";
+@import '../helpers';
+
+
+/* Object components -------------------------------------------------------- */
+
+@import '../objects/global';

@@ -1,0 +1,36 @@
+/* Brand fonts -------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('https://cdn.shopify.com/s/files/1/0696/3934/0290/files/GothamPro.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('https://cdn.shopify.com/s/files/1/0696/3934/0290/files/GothamPro-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('https://cdn.shopify.com/s/files/1/0696/3934/0290/files/GothamPro-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$font-myriadpro: 'MyriadPro', sans-serif;
+$font-body: $font-myriadpro;
+$font-italic: 'MyriadPro-Italic', sans-serif;
+$font-header: 'MyriadPro-Bold', sans-serif;
+$font-gotham: 'Gotham', sans-serif;
+
+:root {
+    --font-myriadpro: $font-myriadpro;
+    --font-body: 'MyriadPro', sans-serif;
+    --font-italic: 'MyriadPro-Italic', sans-serif;
+    --font-header: 'MyriadPro-Bold', sans-serif;
+    --font-gotham: $font-gotham;
+}
