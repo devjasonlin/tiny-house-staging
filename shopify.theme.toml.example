@@ -1,0 +1,9 @@
+#################################################################
+# MMS Studio / MMS Base - Development                          ##
+#################################################################
+
+[environments.development]
+
+store = "REPLACE_ME_"
+password = "REPLACE_ME_WITH_PASSWORD_FROM_THEME_ACCESS_APP"
+theme = "THEME_ID_FROM_SHOPIFY"
